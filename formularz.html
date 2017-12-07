@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>proba formularza</title>
+<meta charset="utf-8" />
+<script>
+function probka(formularz)
+{
+var zmienna = formularz.poletekstowe.value;
+alert ("wprowadzono:"+ zmienna);
+}
+</script>
+</head>
+<body>
+<form name="mojformularz" action="" method="get">
+<input type="text" name="poletekstowe" value="" />
+<input type="button" name="przycisk" value="kliknij" onClick="probka(this.form)"/>
+</form>
+<fieldset>
+
+
+<legend> twoje dane osobowe </legend>
+<label> Imie
+<input type="text" name="imie" />
+</label>
+<br />
+<label> Nazwisko
+<input type="text" name="nazwisko" />
+</label>
+<br />
+<label> Pesel (max 11 znaków)
+<input type="text" name="Pesel" maxlength="11" />
+</label> <br />
+<label> Data urodzenia:
+<select name="dzien">
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+</select>
+
+<select name="miesiac">
+<option value="styczeń">styczeń</option>
+<option value="luty">luty</option>
+<option value="marzec">marzec</option>
+<option value="kwiecień">kwiecień</option>
+</select>
+<select name="rok">
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+</select>
+
+</label>
+</fieldset>
+<fieldset>
+<legend> twoje zainteresowania </legend>
+<input type="checkbox" name="test" value"aaa" />koty<br />
+<input type="checkbox" name="test" value"aaa" />psy<br />
+<input type="checkbox" name="test" value"aaa" />krowy<br />
+<input type="checkbox" name="test" value"aaa" />chomiki
+</fieldset>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
